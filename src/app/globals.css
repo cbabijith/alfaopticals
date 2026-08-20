@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ── Brand design tokens ─────────────────────────────────────── */
+@theme {
+  --color-brand-red: #ed1c24;
+  --color-brand-red-dark: #c4151c;
+  --color-brand-red-deep: #a51016;
+  --color-brand-red-soft: #fdeeee;
+  --color-brand-blue: #2e3192;
+  --color-brand-blue-dark: #23256f;
+  --color-brand-blue-deep: #1b1d57;
+  --color-brand-blue-soft: #eceefb;
+  --color-ink: #17182b;
+  --color-muted: #565a6e;
+  --color-cloud: #f6f7fb;
+  --color-line: #e8eaf2;
+
+  --animate-marquee: marquee 42s linear infinite;
+  --animate-float: float 5s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+@theme inline {
+  --font-display: var(--font-bebas), "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base ────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  /* Mobile: kill the grey tap-flash for an app-like feel (no desktop effect) */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* iOS safe-area padding for the mobile sticky action bar */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Mobile-only: booking modal slides up like a bottom sheet */
+@keyframes sheet-up {
+  from {
+    transform: translateY(48px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal-sheet {
+  animation: sheet-up 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (min-width: 640px) {
+  .modal-sheet {
+    animation: none; /* desktop: unchanged, no animation */
+  }
+}
+
+::selection {
+  background: var(--color-brand-red);
+  color: #fff;
+}
+
+/* ── Scroll-reveal animation (driven by <Reveal/>) ───────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee { animation: none !important; }
+  .animate-float { animation: none !important; }
+}
+
+/* ── Shared bits ─────────────────────────────────────────────── */
+
+/* Bebas headline optical sizing: slightly tighter, taller look */
+.font-display {
+  letter-spacing: 0.015em;
+  line-height: 0.95;
+}
+
+/* Dotted texture for dark blue CTA / footer */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+/* Thin diagonal stripes for light sections */
+.diag-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(46, 49, 146, 0.045) 0 2px,
+    transparent 2px 14px
+  );
+}
+
+/* Hide scrollbar utility for brand marquee */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
