@@ -11,13 +11,13 @@ export default function About() {
           <div className="relative overflow-hidden rounded-2xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/alfa-kottayam-storefront.webp"
+              src="/images/alfa-kottayam-storefront-enhanced.webp"
               alt="Alfa Opticals storefront on Sastri Road in Kottayam"
-              className="aspect-[881/499] w-full object-cover"
+              className="aspect-[3/2] w-full object-cover"
               loading="lazy"
               decoding="async"
-              width={881}
-              height={499}
+              width={1536}
+              height={1024}
             />
           </div>
           {/* Floating since badge */}

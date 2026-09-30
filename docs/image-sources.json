@@ -3,6 +3,15 @@
   "note": "Collection portraits are fictional AI-generated models, not photographs of Alfa staff or customers.",
   "assets": [
     {
+      "path": "public/images/alfa-kottayam-storefront-enhanced.webp",
+      "kind": "AI-enhanced business photograph",
+      "generator": "Built-in image_gen tool",
+      "source_image": "User-supplied codex-clipboard-682da013-c5ae-49e5-bfd3-278c10973316.png",
+      "prompt": "Edit the supplied real photograph of Alfa Opticals, Sastri Road, Kottayam, into a crisp, beautiful, clean professional architectural photograph for the shop's website. Preserve the actual business, architecture, façade proportions, red cladding, dark royal blue and white geometric strips, existing Malayalam lettering, the small eye logo, and the English ALFA OPTICALS sign and ADVANCED VISION CARE & CONTACT LENS CLINIC lettering exactly as in the reference. This is a photographic enhancement of the same real shop, not a redesign and not a fictitious new building. Do not rewrite, translate or invent lettering. Keep the real glass entrance and shopfront recognizable. Create a balanced, slightly wider-than-landscape composition (approximately 3:2), with the entire Alfa façade, all main signs and entrance fully visible, straight architectural verticals, cleaner framing with minimal neighboring shops, and a modest strip of pavement at the bottom. Improve natural daylight and exposure, recover highlight detail, vibrant faithful red and blue branding, neutral whites, clean rich contrast, clear detail and realistic professional camera sharpness without oversharpening. Remove only temporary foreground obstructions: parked motorcycles, portable no-parking posts and the traffic cone; clean small pavement litter and visual clutter while retaining the actual entrance steps, ground level and street context. Do not add people, landscaping, luxury architectural features, a different entrance, fake displays, or new signs. Keep the storefront physically truthful. Preserve the Malayalam glyph shapes faithfully from the supplied image. Avoid washed-out colors, blur, fog, heavy HDR, lens flares, cinematic effects or illustration/CGI appearance. The result should feel like a newly commissioned high quality daylight photograph of this exact Kerala optical shop, polished and welcoming.",
+      "processing": "Generated at 1536 by 1024 pixels; encoded as WebP at quality 91 without further compositional edits",
+      "note": "AI-enhanced interpretation of the supplied real storefront photograph, with lighting, colour and perspective adjustments and temporary street clutter removed."
+    },
+    {
       "path": "public/images/alfa-kottayam-storefront.webp",
       "kind": "existing business photograph",
       "source_page": "https://www.citymapia.com/kottayam/alfa-opticals",
