@@ -7,15 +7,15 @@ import { CalendarCheckIcon, PhoneIcon, WhatsAppIcon } from "./icons";
  */
 export default function MobileActionBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
+    <div data-mobile-actions className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
       <div className="safe-bottom border-t border-line bg-white/95 shadow-[0_-12px_32px_-16px_rgba(23,24,43,0.35)] backdrop-blur-md">
-        <div className="mx-auto grid max-w-md grid-cols-[1fr_auto_auto] items-center gap-2.5 px-4 py-3">
+        <div className="mx-auto grid max-w-md grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2 px-3 py-2.5 sm:px-4">
           <a
             href="#book"
             data-book-test
-            className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-red px-4 text-sm font-semibold uppercase tracking-wider text-white shadow-[0_10px_22px_-10px_rgba(237,28,36,0.7)] transition active:scale-[0.97]"
+            className="inline-flex h-12 min-w-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-brand-red px-2 text-xs font-semibold uppercase tracking-wide text-white shadow-[0_10px_22px_-10px_rgba(237,28,36,0.7)] transition active:scale-[0.97] min-[360px]:text-sm"
           >
-            <CalendarCheckIcon className="size-4.5" />
+            <CalendarCheckIcon className="size-4.5 shrink-0" />
             Book Eye Test
           </a>
           <a

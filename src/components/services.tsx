@@ -5,7 +5,7 @@ import { ArrowRightIcon, CheckIcon } from "./icons";
 export default function Services() {
   return (
     <section id="services" className="scroll-mt-24 bg-brand-blue-deep py-20 max-lg:py-14 text-white sm:py-28">
-      <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:gap-14 sm:px-6 xl:grid-cols-[1fr_1.2fr] xl:gap-20">
         {/* Left: heading + copy */}
         <div>
           <Reveal>

@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center">
           <div className="inline-block rounded-lg bg-white p-3 pr-5 shadow-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt={`${site.name} logo`} className="h-14 w-auto" width={360} height={88} />
+            <img src="/logo.svg" alt={`${site.name} logo`} className="h-auto w-56 max-w-full" width={360} height={88} />
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
             {site.tagline}. Serving {site.city} with honest eye care, genuine
@@ -96,7 +96,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className="flex gap-3 transition hover:text-white">
+              <a href={`mailto:${site.email}`} className="flex gap-3 [overflow-wrap:anywhere] transition hover:text-white">
                 <MailIcon className="mt-0.5 size-4.5 shrink-0 text-brand-red" />
                 {site.email}
               </a>

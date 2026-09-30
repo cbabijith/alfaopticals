@@ -40,14 +40,14 @@ export default function Collections() {
                     aria-hidden
                   />
                   {/* Bottom label */}
-                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4">
-                    <div>
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-3 sm:p-4">
+                    <div className="min-w-0">
                       <h3 className="font-display text-xl uppercase leading-tight text-white sm:text-2xl">
                         {cat.name}
                       </h3>
                       <p className="mt-0.5 hidden text-xs text-white/75 sm:block">{cat.desc}</p>
                     </div>
-                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-red text-white opacity-0 transition-all duration-300 group-hover:opacity-100 sm:size-9">
+                    <span className="hidden size-9 shrink-0 items-center justify-center rounded-full bg-brand-red text-white opacity-0 transition-all duration-300 group-hover:opacity-100 sm:flex">
                       <ArrowRightIcon className="size-4" />
                     </span>
                   </div>

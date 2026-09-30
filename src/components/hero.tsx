@@ -3,7 +3,7 @@ import { ArrowRightIcon, CalendarCheckIcon, ChevronDownIcon, WhatsAppIcon } from
 
 export default function Hero() {
   return (
-    <section id="home" className="relative isolate overflow-hidden bg-brand-blue-deep">
+    <section id="home" className="relative isolate scroll-mt-20 overflow-hidden bg-brand-blue-deep">
       {/* Background photo (LCP) */}
       <picture>
         <source media="(max-width: 768px)" srcSet="/images/hero-960.webp" type="image/webp" />
@@ -28,19 +28,19 @@ export default function Hero() {
         aria-hidden
       />
 
-      <div className="mx-auto flex min-h-[calc(100svh-7rem)] max-w-7xl flex-col justify-center px-4 pb-28 pt-16 sm:px-6 lg:pb-32">
+      <div className="mx-auto flex max-w-7xl flex-col justify-center px-4 py-12 sm:min-h-[calc(100svh-7rem)] sm:px-6 sm:pb-24 sm:pt-16 lg:pb-32">
         <div className="max-w-2xl">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-white backdrop-blur">
-            <span className="size-1.5 rounded-full bg-brand-red" aria-hidden />
+          <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur sm:px-4 sm:text-xs sm:tracking-[0.22em]">
+            <span className="size-1.5 shrink-0 rounded-full bg-brand-red" aria-hidden />
             Excellence since {site.since} · {site.city}
           </p>
 
-          <h1 className="mt-6 font-display text-[clamp(3.2rem,10vw,6.5rem)] uppercase leading-[0.92] text-white">
+          <h1 className="mt-6 font-display text-[clamp(2.75rem,10vw,6.5rem)] uppercase leading-[1.05] text-white sm:leading-[0.98]">
             Find Your{" "}
             <span className="relative inline-block text-brand-red">
               Perfect Pair
               <svg
-                className="absolute -bottom-2 left-0 w-full text-white/70"
+                className="absolute -bottom-1 left-0 w-full text-white/70"
                 viewBox="0 0 300 12"
                 preserveAspectRatio="none"
                 aria-hidden
@@ -57,7 +57,7 @@ export default function Hero() {
             of Glasses
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-xl">
             {site.tagline}. Premium frames, precision lenses and expert eye care —
             styled and fitted just for you.
           </p>
@@ -82,7 +82,7 @@ export default function Hero() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex max-sm:justify-center items-center gap-2 text-sm font-semibold text-white/85 underline-offset-4 transition hover:text-white hover:underline"
+              className="inline-flex min-h-11 max-sm:justify-center items-center gap-2 text-sm font-semibold text-white/85 underline-offset-4 transition hover:text-white hover:underline"
             >
               <WhatsAppIcon className="size-5 text-[#25D366]" />
               WhatsApp us
@@ -97,9 +97,9 @@ export default function Hero() {
           {heroStats.map((s) => (
             <div
               key={s.label}
-              className="flex flex-col items-center gap-0.5 rounded-xl bg-white/5 py-5 lg:rounded-none lg:bg-transparent"
+              className="flex min-w-0 flex-col items-center gap-1 rounded-xl bg-white/5 px-2 py-4 text-center lg:rounded-none lg:bg-transparent lg:py-5"
             >
-              <dt className="order-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">
+              <dt className="order-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/60 sm:text-[11px] sm:tracking-[0.18em]">
                 {s.label}
               </dt>
               <dd className="order-1 font-display text-3xl text-white sm:text-4xl">{s.value}</dd>

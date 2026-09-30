@@ -20,15 +20,15 @@ export default function About() {
               height={1024}
             />
           </div>
-          {/* Floating since badge */}
-          <div className="absolute -bottom-6 -right-3 rounded-xl bg-brand-red px-6 py-4 text-white shadow-[0_18px_40px_-14px_rgba(237,28,36,0.7)] sm:-right-6">
-            <p className="font-display text-4xl leading-none">{site.since}</p>
-            <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/85">
+          {/* Keep the badge below the photograph on narrow screens. */}
+          <div className="mt-3 flex w-fit items-center gap-3 rounded-xl bg-brand-red px-4 py-3 text-white shadow-[0_18px_40px_-14px_rgba(237,28,36,0.7)] sm:absolute sm:-bottom-6 sm:right-4 sm:mt-0 sm:block sm:px-6 sm:py-4">
+            <p className="font-display text-3xl leading-none sm:text-4xl">{site.since}</p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/85 sm:mt-1 sm:text-[11px] sm:tracking-[0.2em]">
               Excellence since
             </p>
           </div>
           {/* Decorative corner */}
-          <div className="absolute -left-4 -top-4 -z-10 size-24 rounded-tl-2xl border-l-4 border-t-4 border-brand-blue/25" aria-hidden />
+          <div className="absolute -left-2 -top-2 -z-10 size-20 rounded-tl-2xl border-l-4 border-t-4 border-brand-blue/25 sm:-left-4 sm:-top-4 sm:size-24" aria-hidden />
         </Reveal>
 
         {/* Text side */}
@@ -59,10 +59,10 @@ export default function About() {
           <Reveal delay={120} className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
               href="#collections"
-              className="group inline-flex items-center gap-2 rounded-md bg-brand-blue px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-brand-blue-dark"
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-md bg-brand-blue px-4 py-3 text-center text-[13px] font-semibold uppercase tracking-wide text-white transition hover:bg-brand-blue-dark sm:w-auto sm:px-6 sm:text-sm sm:tracking-wider"
             >
               Discover Our Collections
-              <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightIcon className="size-4 shrink-0 transition-transform group-hover:translate-x-1" />
             </a>
             <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink/75">
               <li className="flex items-center gap-2">

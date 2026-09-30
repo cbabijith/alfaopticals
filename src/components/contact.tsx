@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="mt-14 max-lg:mt-9 grid gap-6 max-lg:gap-4 lg:grid-cols-[1fr_1.15fr] lg:gap-10">
           {/* Info cards */}
-          <div className="grid content-start gap-5 max-lg:gap-3.5 sm:grid-cols-2">
+          <div className="grid min-w-0 content-start gap-5 max-lg:gap-3.5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
             {cards.map((card, i) => {
               const Icon = card.icon;
               const Body = card.href ? "a" : "div";
@@ -58,7 +58,7 @@ export default function Contact() {
                       <Icon className="size-5" />
                     </span>
                     <h3 className="mt-4 font-display text-xl uppercase text-ink">{card.title}</h3>
-                    <p className="mt-2 space-y-0.5 text-sm leading-relaxed text-muted">
+                    <p className="mt-2 space-y-0.5 break-words text-sm leading-relaxed text-muted [overflow-wrap:anywhere]">
                       {card.lines.map((line) => (
                         <span key={line} className="block">
                           {line}

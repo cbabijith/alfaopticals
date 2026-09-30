@@ -37,12 +37,16 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background: #ffffff;
   color: var(--color-ink);
   font-family: var(--font-sans);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
   -webkit-font-smoothing: antialiased;
   /* Mobile: kill the grey tap-flash for an app-like feel (no desktop effect) */
   -webkit-tap-highlight-color: transparent;
@@ -51,6 +55,33 @@ body {
 /* iOS safe-area padding for the mobile sticky action bar */
 .safe-bottom {
   padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+.modal-viewport {
+  position: fixed;
+  inset: var(--dialog-top, 0px) 0 auto;
+  width: 100%;
+  height: var(--dialog-height, 100dvh);
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: var(--dialog-padding, 0px);
+  overflow: hidden;
+  color: inherit;
+  background: transparent;
+}
+
+.modal-viewport[open] { display: flex; }
+.modal-viewport::backdrop {
+  background: rgb(27 29 87 / 65%);
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 1024px) {
+  html { scroll-padding-bottom: 1.5rem; }
 }
 
 /* Mobile-only: booking modal slides up like a bottom sheet */
@@ -104,14 +135,17 @@ body {
   }
   .animate-marquee { animation: none !important; }
   .animate-float { animation: none !important; }
+  .modal-sheet { animation: none; }
 }
 
 /* ── Shared bits ─────────────────────────────────────────────── */
 
 /* Bebas headline optical sizing: slightly tighter, taller look */
-.font-display {
-  letter-spacing: 0.015em;
-  line-height: 0.95;
+@layer components {
+  .font-display {
+    letter-spacing: 0.015em;
+    line-height: 0.95;
+  }
 }
 
 /* Dotted texture for dark blue CTA / footer */

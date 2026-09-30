@@ -35,7 +35,7 @@ export default function Brands() {
         </div>
       </div>
 
-      <p className="mt-8 text-center text-sm text-muted">
+      <p className="mt-8 px-4 text-center text-sm leading-relaxed text-muted sm:px-6">
         …and many more premium brands in store.{" "}
         <a href="#contact" className="font-semibold text-brand-blue underline-offset-4 hover:underline">
           Ask us about a specific brand
