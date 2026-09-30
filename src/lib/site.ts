@@ -78,8 +78,8 @@ export const navLinks = [
 
 export const heroStats = [
   { value: `${new Date().getFullYear() - site.since}+`, label: "Years of Trust" },
-  { value: "500+", label: "Frame Styles" },
-  { value: "1 Lakh+", label: "Happy Customers" },
+  { value: "1000+", label: "Frame Styles" },
+  { value: "10 Lakh+", label: "Happy Customers" },
   { value: "4.9★", label: "Google Rating" },
 ];
 
@@ -90,9 +90,9 @@ export const categories = [
   { name: "Contact Lenses", desc: "Daily, monthly & coloured lenses", image: "/images/cat-contacts.webp", alt: "Close-up of a human eye — contact lenses" },
   { name: "Sunglasses", desc: "UV protection with premium style", image: "/images/cat-sunglasses.webp", alt: "Premium sunglasses" },
   { name: "Frames", desc: "Acetate, metal & titanium frames", image: "/images/cat-frames.webp", alt: "Collection of eyeglass frames" },
-  { name: "Men's Glasses", desc: "Bold, classic & contemporary", image: "/images/cat-men.webp", alt: "Man wearing eyeglasses" },
-  { name: "Women's Glasses", desc: "Elegant styles for every look", image: "/images/cat-women.webp", alt: "Woman wearing eyeglasses" },
-  { name: "Kids Glasses", desc: "Durable & fun young eyewear", image: "/images/cat-kids.webp", alt: "Child wearing glasses" },
+  { name: "Men's Glasses", desc: "Bold, classic & contemporary", image: "/images/cat-men-kerala.webp", alt: "Indian man wearing dark rectangular eyeglasses" },
+  { name: "Women's Glasses", desc: "Elegant styles for every look", image: "/images/cat-women-kerala.webp", alt: "Indian woman wearing burgundy eyeglasses" },
+  { name: "Kids Glasses", desc: "Durable & fun young eyewear", image: "/images/cat-kids-kerala.webp", alt: "Indian child wearing blue prescription glasses" },
   { name: "Multifocal", desc: "Progressive & bifocal solutions", image: "/images/cat-multifocal.webp", alt: "Multifocal progressive lenses" },
 ] as const;
 
@@ -134,7 +134,7 @@ export const serviceLists = [
     "Paediatric Vision Screening",
   ],
   [
-    "Progressive Lens Counselling",
+    "Progressive Lens Consulting",
     "Dry Eye Management",
     "Spectacle Dispensing",
     "Lens Edging & Fitting",

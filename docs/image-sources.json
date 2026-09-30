@@ -1,0 +1,34 @@
+{
+  "updated": "2026-09-30",
+  "note": "Collection portraits are fictional AI-generated models, not photographs of Alfa staff or customers.",
+  "assets": [
+    {
+      "path": "public/images/alfa-kottayam-storefront.webp",
+      "kind": "existing business photograph",
+      "source_page": "https://www.citymapia.com/kottayam/alfa-opticals",
+      "source_image": "https://cdn.citymapia.com/alfa-opticals/2185/businessbanner.jpg",
+      "processing": "Re-encoded as WebP without compositional edits"
+    },
+    {
+      "path": "public/images/cat-men-kerala.webp",
+      "kind": "AI-generated fictional model",
+      "generator": "Built-in image_gen tool",
+      "prompt": "Use case: photorealistic-natural. Create a premium optical-store website category photo for Men's Glasses. A fictional Indian Malayali man in his early thirties wearing tasteful dark rectangular prescription eyeglasses, naturally textured skin, short black hair and a neat beard, muted blue cotton shirt. Contemporary everyday Kerala styling. Soft natural daylight, blurred tropical greenery and warm neutral exterior background suggesting Kottayam, shallow depth of field. Vertical 4:5 composition, medium close portrait from upper chest, face and glasses sharp in upper middle, full hair and both temples visible. Friendly relaxed expression, natural eyes clearly visible through realistic clear lenses. Lower quarter plain shirt/background for a website text overlay that will be added separately. One person only, no text, no logos, no watermarks, no stereotypes. Photographic, not illustration.",
+      "processing": "Resized proportionally to 800 by 1000 pixels and encoded as WebP"
+    },
+    {
+      "path": "public/images/cat-women-kerala.webp",
+      "kind": "AI-generated fictional model",
+      "generator": "Built-in image_gen tool",
+      "prompt": "Use case: photorealistic-natural. Create a premium optical-store website category photo for Women's Glasses. A fictional Indian Malayali woman in her late twenties wearing elegant thin burgundy prescription eyeglasses, naturally textured medium brown skin, long dark wavy hair loosely pulled back, simple small earrings and an understated sage green cotton kurta. Contemporary everyday Kerala styling. Soft natural daylight, blurred tropical greenery and warm neutral veranda background suggesting Kottayam, shallow depth of field. Vertical 4:5 composition, medium close portrait from upper chest, face and glasses sharp in upper middle, full hair visible. Warm relaxed smile, natural eyes clearly visible through realistic clear lenses. Lower quarter plain clothing/background for website text overlay added separately. One person only, no text, no logos, no watermarks, no stereotypes. Photographic, not illustration.",
+      "processing": "Resized proportionally to 800 by 1000 pixels and encoded as WebP"
+    },
+    {
+      "path": "public/images/cat-kids-kerala.webp",
+      "kind": "AI-generated fictional model",
+      "generator": "Built-in image_gen tool",
+      "prompt": "Use case: photorealistic-natural. Create a premium family optical-store website category photo for Kids Glasses. A fictional Indian child from Kerala, approximately nine years old, wearing clearly visible blue flexible prescription eyeglasses and a modest plain mustard yellow cotton T-shirt. Black slightly wavy hair, natural warm brown skin, cheerful relaxed smile. Soft natural daylight, blurred garden greenery in Kerala with warm neutral background, shallow depth of field. Vertical 4:5 composition, medium close portrait from chest upwards; full head and glasses clearly framed in upper middle. Natural eyes clearly visible through realistic clear lenses, genuine childhood proportions. Lower quarter plain clothing/background for website text overlay added separately. One child only, no text, no logos, no watermarks. Wholesome ordinary eyewear campaign photography, not illustration.",
+      "processing": "Resized proportionally to 800 by 1000 pixels and encoded as WebP"
+    }
+  ]
+}
