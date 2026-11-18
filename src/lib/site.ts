@@ -64,14 +64,16 @@ export const mapsDirectionsHref = site.mapsShareUrl;
 
 /* ── Navigation ─────────────────────────────────────────────── */
 
+// Root-relative so links keep working from legal sub-pages too
+// (on the home page they behave as normal smooth-scroll anchors).
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Collections", href: "#collections" },
-  { label: "Services", href: "#services" },
-  { label: "Brands", href: "#brands" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Collections", href: "/#collections" },
+  { label: "Services", href: "/#services" },
+  { label: "Brands", href: "/#brands" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 /* ── Hero ───────────────────────────────────────────────────── */

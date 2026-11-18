@@ -71,6 +71,14 @@ export function ArrowRightIcon(props: P) {
   );
 }
 
+export function ArrowLeftIcon(props: P) {
+  return (
+    <svg {...stroke} {...props}>
+      <path d="M19 12H5m6-6-6 6 6 6" />
+    </svg>
+  );
+}
+
 export function ChevronDownIcon(props: P) {
   return (
     <svg {...stroke} {...props}>

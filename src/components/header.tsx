@@ -76,7 +76,7 @@ export default function Header() {
             scrolled ? "h-16" : "h-18 sm:h-20"
           }`}
         >
-          <a href="#home" className="flex min-w-0 max-w-[calc(100%_-_6.75rem)] items-center" aria-label={`${site.name} — home`}>
+          <a href="/#home" className="flex min-w-0 max-w-[calc(100%_-_6.75rem)] items-center" aria-label={`${site.name} — home`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
@@ -99,7 +99,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#book"
+              href="/#book"
               data-book-test
               className="ml-2 inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-red px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-white shadow-[0_8px_20px_-8px_rgba(237,28,36,0.65)] transition hover:bg-brand-red-dark"
             >
@@ -180,7 +180,7 @@ export default function Header() {
             </nav>
             <div className="border-t border-line p-5 pb-6">
               <a
-                href="#book"
+                href="/#book"
                 data-book-test
                 onClick={() => setOpen(false)}
                 className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-brand-red text-sm font-semibold uppercase tracking-wider text-white shadow-[0_10px_24px_-10px_rgba(237,28,36,0.7)] transition active:scale-[0.98]"

@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
             ))}
             <li>
-              <a href="#book" className="font-semibold text-brand-red transition hover:text-white">
+              <a href="/#book" className="font-semibold text-brand-red transition hover:text-white">
                 Book an Eye Test
               </a>
             </li>
@@ -68,7 +68,7 @@ export default function Footer() {
           <ul className="mt-5 space-y-2.5 text-sm">
             {categories.slice(0, 6).map((c) => (
               <li key={c.name}>
-                <a href="#collections" className="text-white/65 transition hover:text-white">
+                <a href="/#collections" className="text-white/65 transition hover:text-white">
                   {c.name}
                 </a>
               </li>
@@ -112,9 +112,9 @@ export default function Footer() {
             © {year} {site.name}, {site.city}. All rights reserved.
           </p>
           <p className="flex items-center gap-4">
-            <a href="#" className="transition hover:text-white/80">Terms &amp; Conditions</a>
+            <a href="/terms-and-conditions/" className="transition hover:text-white/80">Terms &amp; Conditions</a>
             <span aria-hidden>·</span>
-            <a href="#" className="transition hover:text-white/80">Privacy Policy</a>
+            <a href="/privacy-policy/" className="transition hover:text-white/80">Privacy Policy</a>
           </p>
         </div>
       </div>
